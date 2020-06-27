@@ -7,6 +7,8 @@
 }
 body{
     background-color: cyan;
+    display: flex;
+    margin-left: 10px;
 }
 .div1
 {
@@ -17,6 +19,7 @@ body{
     font-weight: 400;
     background-color:crimson;
     border:2px solid ;
+    margin-left: 10px;
 
 }
 .div1 .img1
@@ -108,4 +111,16 @@ animation-duration: 1s;
         opacity: 1;
     }
 }
-
+@media screen and (max-width: 425px)
+{
+   .ca{
+       flex-direction: column;
+       flex-wrap: wrap;
+   }
+}
+@media screen and (min-width:450px) and (max-width:768px)
+{
+    .ca{
+        flex-direction: column;
+    }
+}
