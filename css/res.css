@@ -27,6 +27,7 @@ body{
     width:200px;
     height:200px;
     border-radius: 90%;
+    
 }
 .div1  img:hover{
     border-radius: 0%;
@@ -71,8 +72,61 @@ body{
 .div1 .div4 ul
 {
     padding-bottom: 5px;
+    
    
     
+}
+.div1 .div4 .hborder
+{
+    width:150px;
+}
+.div1 .div4 .hborder::before
+{
+    content:"";
+    bottom: 0px;
+    left: 0px;
+    display: block;
+    width:-10px;
+    height:-2px;
+    background-color: crimson;
+    transition: 0.5s;
+}
+.div1 .div4 .hborder:hover::after
+{
+    content:"";
+    bottom: 0px;
+    left:0px;
+   animation-name: ani1;
+   animation-duration: 0.5s;
+    display: block;
+    height:3px;
+    border:10%;
+    background: linear-gradient(to right,cornsilk
+    ,pink,violet,purple);
+    transition: 0.5s;
+    width: 110px;
+}
+@keyframes ani1 {
+    0%
+    {
+        width:10px;
+    }
+    30%
+    {
+        width:20px;
+    }
+    60%
+    {
+        width:30px;
+    }
+    85%
+    {
+        width:40px;
+    }
+    100%
+    {
+        width:50px;
+    }
 }
 
 .div5
@@ -193,13 +247,13 @@ margin-left: 10px;
     border:5px outset gray;
     margin-right: 20px;
     
-}
+} 
 .div1 .div4:hover
 {
     border:5px outset gray;
     margin-right: 20px;
     
-}
+} 
 .div1 .div3:hover
 {
     border:5px outset gray;
