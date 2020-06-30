@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>
+ ::LOG  IN::  </title>
+ <link rel="icon"  href="img/computer.svg">
+ 
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  
+ .navbar-nav
+ {
+   
+     position: relative;
+margin:37px auto;
+
+width:640px;
+height: 50px;
+
+text-align: center;
+border-radius: 8px;
+box-shadow: 0 2px 3px 0 rgba(128, 128, 128, 0.273);
+}
+
+.navbar-nav .nav-item
+{
+    text-transform: uppercase;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20px;
+  text-align: center;
+   line-height: 50px;
+   text-decoration: none;
+   position: relative;
+   z-index: 1;
+   transition: all 2s ease 0.1s;
+}
+.img1
+{
+    display:flex;
+  
+}
+.img1>div{
+    margin:30px auto;
+   
+}
+.div1,.div2
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 30px;
+    height: 750px;
+    width: 460px;
+    padding-bottom: 30px;
+
+  
+}
+img
+{
+    width:400px;
+    height:300px;
+    margin:10px;
+    margin-bottom: 30px;
+    opacity: 0.75;
+}
+img:hover{
+    opacity: 1;
+    
+    transition:  0.5s;
+
+    animation:animate 1s linear ;
+}
+@keyframes animate{
+0%{
+    transform: rotate(10deg);
+}
+100%
+{
+    transform: rotate(0deg);
+}
+}
+
+.nav-item a{
+  
+    text-transform: uppercase;
+   color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20px;
+  text-align: center;
+   line-height: 50px;
+   text-decoration: none;
+   position: relative;
+   z-index: 1;
+}
+.nav-item:nth-child(1){
+    width:160px
+}
+.nav-item:nth-child(2){
+    width:160px
+}
+.nav-item:nth-child(3){
+    width:160px
+}
+.nav-item:nth-child(4){
+    width:160px
+}
+.animation
+{
+    left:0;
+    top: 0;
+    height:50px;
+    width:160px;
+    position: absolute;
+    background-origin: padding-box;:0;
+    z-index: 0;
+    border-radius: 8px;
+    background-color: turquoise;
+    transition: all 1s ease 0.1s;
+    opacity: 0;
+}
+
+.nav-item:nth-child(1):hover~.animation
+{
+    color: black;
+    background-color:turquoise;
+    border-radius: 8px;
+    left:0;
+    opacity: 1;
+}
+.nav-item:nth-child(2):hover~.animation
+{
+    color: black;
+    background-color:turquoise;
+    border-radius: 8px;
+    left:160px;
+    opacity: 1;
+}
+.nav-item:nth-child(3):hover~.animation
+{
+    color: black;
+    background-color:turquoise;
+    border-radius: 8px;
+    left:320px;
+    opacity: 1;
+}
+.nav-item:nth-child(4):hover~.animation
+{
+    color: black;
+    background-color:turquoise;
+    border-radius: 8px;
+    left:480px;
+    opacity: 1;
+}
+body::-webkit-scrollbar
+{
+    width:15px;
+   
+}
+body::-webkit-scrollbar-track
+{
+background: rgb(32, 1, 32);
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color: turquoise;
+}
+</style>
+</head>
+<body
+>
+    <nav class="navbar navbar-expand bg-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="profile.html">Profile</a></li>
+            <li class="nav-item"><a href="login.html">Login</a></li>
+            <li class="nav-item"><a href="login.html">Dropdown</a></li>
+        <div class="animation start-home"></div>
+        </ul>
+    </nav>
+    
+<div class="img1">
+<div class="div1">
+<img src="img/robert-bye-13761-unsplash.jpg">
+<img src="img/kace-rodriguez-85845-unsplash.jpg">
+</div>
+<div  class="div2">
+    <img src="img/water.jpg">
+    <img src="img/will-van-wingerden-87463-unsplash.jpg">
+</div>
+</div>
+</body>
+</html>
