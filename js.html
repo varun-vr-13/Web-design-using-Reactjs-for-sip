@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title >
+        Javascript Basics
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+</head>
+<style>
+    .btn
+    {
+        background-color: cadetblue;
+    }
+</style>
+<body>
+    <p id="i1"> hello </p>
+<button onclick="fn1()" class="btn btn-primary">click</button><br><br>
+<button type="button" class="btn btn-secondary dropdown-toggle " data-toggle="dropdown">click me</button>
+<div class="dropdown-menu">
+    <a  class="dropdown-item" onclick="add()">addition</a>
+    <a  class="dropdown-item" onclick="sub()">subtraction</a>
+    <a  class="dropdown-item" onclick="mul()">multiplication</a>
+    <a  class="dropdown-item" onclick="div()">division</a>
+</div>
+<h2 id="i2"></h2>
+
+</body>
+
+<script type="text/javascript">
+    function fn1()
+    {
+        document.getElementById("i1").innerHTML="hi varun";
+    alert("you clicked the button");
+    }
+    function add()
+    {
+        var a=10;
+        var b=20;
+        document.getElementById("i2").innerHTML="sum is "+(a+b);
+      
+    }
+ function mul(){
+    var a=10;
+    var b=20;
+ 
+    document.getElementById("i2").innerHTML="product is "+(a*b);
+ }
+    function div(){
+        var a=10;
+        var b=20;
+        document.getElementById("i2").innerHTML="divsion is "+(a/b);
+    }
+    function sub()
+    {
+        var a = 20;
+        var b = 11;
+        document.getElementById("i2").innerHTML="difference is "+(a-b);
+       
+    }
+    $("#i3").datepicker(
+        {
+            numberOfMonths:1,
+            changeYear:true,
+            changeMonth:true,
+            showWeek:true,
+            showOtherMonths:true,
+            minDate: new Date(2020,6,6),
+            maxDate:new Date(2020,10,6)
+        }
+    );
+    
+
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</html>
