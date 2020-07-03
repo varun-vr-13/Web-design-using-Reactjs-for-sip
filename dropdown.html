@@ -12,44 +12,46 @@
 <style>
  .jumbotron
  {
-     width:400px;
-     height: 400px;
-     margin:150px 450px;
-    color:#001233;
-     font-size: 20px;
-     font-weight:500;
-     border: 2px solid rgba(128, 128, 128, 0.545);
-     background-color: rgba(255, 255, 255, 0.159);
-     letter-spacing: 2px;
-   
+     width:300px;
+     margin-left: 300px;
+     margin-right: 300px;
  }
-body
-{
-    background-image: url(img/com.jpg) ;
-    background-size:100% 100%;
+ body
+ {
+     background-color: #0b132b;
+ }
     
-}
-
-.jumbotron:hover
-{
-    background-color: rgba(255, 255, 255, 0.559);
-}
-
+ .div1
+ {
+     margin:200px 600px;
+     color:#a6a2a2;
+     
+ }
+ h2{
+     margin-bottom: 20px;
+ }
+ .dropdown-menu a:hover
+ {
+background-color: #3a506b;
+color: #a6a2a2;
+font-size: 20px;
+font-weight: bolder;
+ }
 </style>
 </head>
 <body>
-    <div class="jumbotron">
-       
-        <form action="">
-            <label>Email Id</label>
-            <input name="mail" type="email" placeholder="mail" class="form-control"><br>
-          <label>Password</label>
-        <input type="password" class="form-control" placeholder="password">
-      <br> <button type="submit"  class="btn btn-primary">submit</button>
-        </form>
-  
-    </div>
 
+
+<div class="div1" >
+    <h2>DropDown </h2>
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">click me</button>
+<div class="dropdown-menu">
+    <a href="" class="dropdown-item">html</a>
+    <a href="" class="dropdown-item">css</a>
+    <a href="" class="dropdown-item">jsp</a>
+    <a href="" class="dropdown-item">nodejs</a>
+</div>
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
