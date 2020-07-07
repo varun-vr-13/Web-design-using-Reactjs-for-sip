@@ -131,6 +131,7 @@ newfile.then(data=>{
     education(data.educationalqualification);
     skills(data.technicalskills);
     hobiies(data.hobies);
+    objective(data.objective);
 })
 var child1 = document.querySelector(".child1");
 var child2 = document.querySelector(".child2");
@@ -235,3 +236,26 @@ function hobiies(hob)
 
    
   }
+
+function objective(obj){
+    child2.appendChild(document.createElement("hr"));
+var hed = document.createElement("h2");
+hed.textContent="Declaration";
+child2.appendChild(hed);
+child2.appendChild(document.createElement("hr"));
+var ob = document.createElement("h4");
+ob.textContent=obj;
+child2.appendChild(ob);
+var bo = document.createElement("input");
+bo.type="checkbox";
+child2.appendChild(bo);
+var doc = document.createElement("label");
+doc.textContent="agree"
+child2.appendChild(doc);
+var but = document.createElement("button");
+but.classList.add("btn");
+but.classList.add("btn-secondry");
+but.textContent="Submit";
+but.href="";
+child2.appendChild(but);
+}
