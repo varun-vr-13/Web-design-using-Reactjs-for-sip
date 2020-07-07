@@ -42,14 +42,17 @@ box-shadow: 0 2px 3px 0 rgba(128, 128, 128, 0.273);
 
 .id1{
     width:480px;
-    height:100px;
+    height:150px;
  margin-left: 10px;
    opacity: 0;
    transform: translateY(-200px);
    background-color: rgba(255, 255, 255, 0.2);
-   font-size: 14px;
+   font-size: 20px;
    font-weight: 500;
    font-family: Lobster Two;
+   -moz-text-size-adjust: auto;
+   word-wrap: break-word;
+   word-spacing: 4px;
 }
 
 img:hover{
@@ -58,7 +61,8 @@ img:hover{
     transition:  1s;
 
     animation:animate 1s linear ;
- 
+ animation-iteration-count: initial;
+
 }
 img:hover~.id1
 {
@@ -109,7 +113,7 @@ img:hover~.id1
     height:50px;
     width:160px;
     position: absolute;
-    background-origin: padding-box;:0;
+    background-origin: padding-box 0;
     z-index: 0;
     border-radius: 8px;
     background-color: turquoise;
@@ -151,7 +155,7 @@ img:hover~.id1
 }
 body::-webkit-scrollbar
 {
-    width:15px;
+    width:20px;
    
 }
 body::-webkit-scrollbar-track
@@ -163,7 +167,7 @@ body::-webkit-scrollbar-thumb
     background-color: turquoise;
 }
 
-@media screen and (max-width: 720px) and (min-width:390px)
+@media screen and (max-width: 720px) and (min-width:550px)
 {
  
   .navbar
@@ -216,61 +220,99 @@ right: 0;
    left:520px;
 }
 }
-@media screen and (max-width: 390px) and (min-width:250px)
+@media screen and (max-width: 550px) and (min-width:250px)
 {
   .navbar
   {
-width:395px;
+width:100%;
 padding: 0;
-height: 150px;
+height: 300px;
 right: 0;
-
+line-height: 0;
+text-align: left;
+z-index: 0;
+margin: 0;
   }
-
+  .navbar button {
+    margin: auto 50px auto;
+}
   .navbar-nav
   {
-      width:320px;
-     
+      width:200px;
+     margin: 30px;
      padding: 0;
+     top:0;
+     height: 200px;
+     line-height: 0;
+     text-align: left;
+     z-index: 0;
   }
- 
+  .nav-item{
+      line-height: 0;
+      margin: 0;
+      text-align: left;
+      height: 200px;
+  }
+  .nav-item a{
+
+  text-align: left;
+   line-height: 0;
+ margin: 0;
+  }
   .nav-item:nth-child(1){
-    width:80px;
-  
+    width:200px;
+   left:0;
+   top:0;
+   height: 50px;
 }
 .nav-item:nth-child(2){
-    width:80px;
+    width:200px;
+    left:0;
+    top:0;
+    height: 50px;
     
 }
 .nav-item:nth-child(3){
-    width:80px;
+    width:200px;
+   left:0;
+   top:0;
+   height: 50px;
    
 }
 .nav-item:nth-child(4){
-    width:80px;
+    width:200px;
+   left:0;
+   top:0;
+   height: 50px;
 }
 .animation{
-    width: 80px;
+    width:200px;
+    left:0;
+    top:0;
+    height: 50px;
     
 }
-.nav-item a{
-    font-size: 10px;
-}
+
 .nav-item:nth-child(1):hover~.animation
 {
    left:0;
+   top:0;
+   
 }
 .nav-item:nth-child(2):hover~.animation
 {
-   left:80px;
+    left:0;
+   top:50px;
 }
 .nav-item:nth-child(3):hover~.animation
 {
-   left:160px;
+    left:0;
+    top:100px;
 }
 .nav-item:nth-child(4):hover~.animation
 {
-   left:240px;
+    left:0;
+   top:150px;
 }
 }
 @media screen and (max-width: 900px) and (min-width:721px)
@@ -329,53 +371,66 @@ right: 0;
 {
   .navbar
   {
-width:250px;
+width:100%;
 padding: 0;
 right: 0;
-height: 150px;
+height: 300px;
+  }
+  .navbar button {
+      margin: auto 50px auto;
   }
   .navbar-nav
   {
-      width:240px;
+      width:180px;
      padding: 0;
   }
   .nav-item{
-      width:50px;
+      width:180px;
       font-size: 8px;
   }
   .nav-item:nth-child(1){
-    width:60px
+    width:180px;
+    height: 50px;
 }
 .nav-item:nth-child(2){
-    width:60px
+    width:180px;
+    height: 50px;
 }
 .nav-item:nth-child(3){
-    width:60px
+    width:180px;
+    height: 50px;
 }
 .nav-item:nth-child(4){
-    width:60px
+    width:180px;
+    height: 50px;
 }
 .animation{
-    width: 60px;
+    width: 180px;
+    height: 50px;
 }
 .nav-item a{
-    font-size: 7.5px;
+    font-size: 10px;
+    text-align: justify;
 }
 .nav-item:nth-child(1):hover~.animation
 {
    left:0;
+   top:0;
 }
 .nav-item:nth-child(2):hover~.animation
 {
-   left:60px;
+    left:0;
+    top:50px;
 }
 .nav-item:nth-child(3):hover~.animation
 {
-   left:120px;
+    left:0;
+    top:100px;
 }
 .nav-item:nth-child(4):hover~.animation
 {
-   left:180px;
+    left:0;
+    top:150px;
 }
 .id1{
     width:200px;
@@ -404,23 +459,37 @@ height: 150px;
     .container{
         flex-direction: column;
     }
-   
-}
-@media all and (max-width: 950px)
-{
     .c1{
         font-size: 2vw;
+        -moz-text-size-adjust: auto;
+        word-wrap: break-word;
+        word-spacing: 4px;
         font-weight: bolder;
     }
     .id1
     {
         height: 150px;
+        width:96%;
+    }
+   
+}
+@media all and (max-width: 950px) and (min-width: 799px)
+{
+    .c1{
+        font-size: 2vw;
+        font-weight: bolder;
+        
+    }
+    .id1
+    {
+        height: 150px;
+        width: 96%;
     }
 }
 @media all and (max-width: 560px)
 {
     .c1{
-        font-size: 4vw;
+        font-size: 3vw;
        font-weight: bolder;
     }
     .id1
@@ -435,10 +504,13 @@ height: 150px;
 </head>
 <body>
     
-    <nav class="navbar navbar-expand bg-dark">
-   
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+       <div class="collapse navbar-collapse " id="navb">
         <ul class="navbar-nav">
-            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item active"><a href="">Home<span class="sr-only">(current)</span></a></li>
             <li class="nav-item"><a href="profile.html">Profile</a></li>
             <li class="nav-item"><a href="login.html">Login</a></li>
             <li class="nav-item"><a href="dropdown.html">Dropdown</a></li>
@@ -446,7 +518,6 @@ height: 150px;
         </ul>
     </div>
     </nav>
-    
 <div class="container">
     <div class="row">
                 <div class="col-sm-12">
@@ -485,35 +556,7 @@ height: 150px;
         </div>
 </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </html>
-<!-- 
-    <div class="img1">
-<div class="div1">
-  
-<img src="img/robert-bye-13761-unsplash.jpg">
-<div class="id1"> 
-<span class="h3">San Francisco</span>
-<p>San Francisco is as famous for its restaurants and food trends as it is for its Golden Gate Bridge and cable cars</p></div>
-
-<img src="img/kace-rodriguez-85845-unsplash.jpg">
-<div class="id1"> 
-    <span class="h3">Catedrais beach  </span>
-   
-    <p>As Catedrais beach on the northwest coast of Spain translates as 'Cathedrals Beach'. It is the touristic name of Praia de Aguas Santas.</p>
-</div>
-</div>
-<div  class="div2">
-    <img src="img/taj2.png">
-    <div class="id1"> 
-        <span class="h3">Taj Mahal</span>
-       
-        <p>The Taj Mahal is a mausoleum complex in Agra , western Uttar Pradesh state, northern India . It is considered the finest example of Mughal architecture.</p>
-    </div>
-    <img src="img/Eiffel.jpg" >
-    <div class="id1"> 
-     <span class="h3">  Paris </span>
-<p>Paris is a global center for art, fashion, gastronomy and culture.The city is proud of its many monuments from the iconic Eiffel Tower to the lofty Notre-Dame cathedral and the majestic Arc de Triomphe</p>
-</div>
-</div>
-</div>
- -->

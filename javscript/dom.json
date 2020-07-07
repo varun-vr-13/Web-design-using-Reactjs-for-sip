@@ -1,0 +1,16 @@
+{
+
+    "box1":{
+    "image":"var1.jpg",
+    "name":"Varun",
+    "mail":"varuncool45@gmail.com",
+    "skill":"Free Lancer"
+    },
+    "box2":{
+        "image":"var2.jpg",
+        "name":"Varun",
+        "mail":"varun325@gmail.com",
+        "skill":"Ethical Hacker"
+        }
+
+}

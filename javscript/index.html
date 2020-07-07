@@ -2,17 +2,146 @@
 <html>
     <head>
         <title></title>
-    <meta name="viewport" content="width=content-width,initial-scale=1.0">
-    </head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <style>
+      .child1 img{
+           width:200px;
+           height: 200px;
+           display: block;
+           margin: 5px auto;
+           border-radius: 10%;
+          box-shadow: 2px 4px 10px rgba(128, 128, 128, 0.966);
+           
+       }
+       table{
+           border:10px solid;
+       }
+    .child2 .div1
+    {
+        height: 200px;
+        background-color: tomato;
+    }
+       body{
+           background-color: rgb(3, 3, 68);
+       }
+       .parent{
+           display: flex;
+           flex-direction: row;
+           color: white;
+
+       }
+       .child1{
+           width:30%;
+           border: 2px solid #ddd;
+           padding: 1%;
+           margin: 1%;
+           border-radius: 10%;
+           font-size: 20px;
+           display:block ;
+           text-align: center;
+       }
+       .child2
+       {
+        width:80%;
+        border: 2px solid #ddd;
+        padding: 1%;
+        margin: 1% 50px auto 10px;
+        border-radius: 2%;
+        font-size: 20px;
+     
+      
+       }
+    @media only screen and (min-width: 250px) and (max-width: 480px)
+   {
+    .child1 img{
+        width:200px;
+        height: 200px;
+        display: block;
+        margin: 5px auto;
+        border-radius: 10%;
+       box-shadow: 2px 4px 10px rgba(128, 128, 128, 0.966);
+        
+    }
+    table{
+        border:5px solid;
+        height: 300px;
+    }
+
+    body{
+        background-color: rgb(3, 3, 68);
+    }
+    .parent{
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+    }
+    .child1{
+        width:96%;
+        border: 2px solid #ddd;
+        padding: 1%;
+        margin: 1%;
+        border-radius: 10%;
+        font-size: 16px;
+        display:block ;
+        text-align: center;
+    }
+    .child2
+    {
+     width:96%;
+     border: 2px solid #ddd;
+     padding: 1%;
+     margin: 1% ;
+     border-radius: 2%;
+     font-size: 16px;
+  
+   
+    }  
+   }
+</style>
+</head>
 <body>
-    <div class="parent">
+    
+   <!--  <div class="parent">
         <div class="child1">
 
         </div>
         <div class="child2">
             
         </div>
-    </div>
+    </div> -->
+<h1 id="root1">
+</h1>
+<h2 id="root2"></h2>
 </body>
 <script type="text/javascript" src="new1.js"></script>
+<script> 
+    var a=3;
+    for(a=0;a<=10;a++){
+        console.log(a);
+    }
+    document.querySelector("#root1").innerHTML=a;
+    var b=5;
+    for(b=0;b<=10;b++){
+        console.log(b);
+    }
+    document.querySelector("#root2").innerHTML=b;
+    let c=101;
+    {
+        let c=102;
+        console.log(c);
+    }
+    console.log(c);
+    var d=18;
+    {
+        var d=12;
+        console.log(d);
+    }console.log(d);
+    const x=123;
+    {
+        const x=321;
+        console.log(x);
+    }
+    console.log(x);
+</script>
 </html>
