@@ -130,6 +130,7 @@ newfile.then(data=>{
     basic1(data.careerobjective);
     education(data.educationalqualification);
     skills(data.technicalskills);
+    hobiies(data.hobies);
 })
 var child1 = document.querySelector(".child1");
 var child2 = document.querySelector(".child2");
@@ -159,9 +160,7 @@ function basic(det){
    
    
 
-var image = document.createElement("image");
-image.src="var.jpg";
-child1.appendChild(image); 
+ 
 }
 function basic1(dat){
     var head = document.createElement("h2");
@@ -218,3 +217,21 @@ function skills(info)
      
   }
 }
+function hobiies(hob)
+  {
+    var y = document.createElement("div");
+    y.classList.add("hob1");
+    var bo = document.createElement("h2");
+    bo.textContent="Technical Skills";
+    y.appendChild(bo);
+    var lis = document.createElement("ol");
+    dta=""
+   for(i=0;i<hob.length;i++){
+  dta+="<li>"+hob[i]+"</li>"
+   }
+   lis.innerHTML=dta;
+   y.appendChild(lis);
+    child1.appendChild(y);
+
+   
+  }
