@@ -1,0 +1,66 @@
+{
+   
+       
+       "details":{
+      "image":"var.JPG",
+        "name":"varun",
+        "email":"varun13@gmail.com",
+        "number":"9389098390",
+        "address":"vizag"
+    },
+    "careerobjective":" To become a successful expert in the field of Information Technology by channelizing my technical knowledge and skills to ensure personal and professional growth and to contribute to the prosperity of the organization."
+    ,
+    "educationalqualification":[
+        {
+"sno":1,
+"institute":"Raghu Institute Of Technology",
+"degree":"B.Tech",
+"passoutyear":"2022",
+"percentage":"90%"
+        },
+        {
+            "sno":2,
+            "institute":"Sri Chaitanya junior College",
+            "degree":"Intermediate",
+            "passoutyear":"2018",
+            "percentage":"90%"
+                    },
+                    {"sno":3,
+                        "institute":"Chaitanya English Medium School",
+                        "degree":"SSC",
+                        "passoutyear":"2016",
+                        "percentage":"90%"
+                                }
+
+    ]
+,
+    "technicalskills":[
+        {
+            "title":"Programming language",
+            "info":["c,c++,python,javascript,java"]
+        },
+        {
+            "title":"Databases",
+            "info":["oracle,mysql,sql,mongodb"]
+        },
+        {
+            "title":"Operating system",
+            "info":["windows,linux,Ubuntu"]
+        }
+    ],
+    "hobies":["Dancing","Cricket","Shuttle","Reading Novels","Coding"]
+  ,
+  "objective":" I here by declare that all the information contained in this resume is in accordance with facts or truths to my knowledge. I take full responsibility for the correctness of the said information.",
+  "certificates":[
+      {"id":1,
+      "dat":"Programming Data Sciences using Python - NPTEL"},
+      {"id":2,
+      "dat":"Python Programming NPTEL"},
+      {"id":3,
+      "dat":"Web Developing Using ReactJs APSSDC"},
+{      "id":4,
+      "dat":"HTML  Edureka"}
+  ]
+    
+   
+}
